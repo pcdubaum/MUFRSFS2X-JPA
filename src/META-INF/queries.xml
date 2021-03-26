@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings version="2.2" xmlns="http://xmlns.jcp.org/xml/ns/persistence/orm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence/orm http://xmlns.jcp.org/xml/ns/persistence/orm_2_2.xsd">
+
+	<named-query name="user.getByName">
+		<query>
+			select u from MUFRUser u where u.name = :name
+		</query>	
+	</named-query>
+	
+	<named-query name="char.getByOwner">
+		<query>
+			select c from MUFRCharacter c where c.owner = :owner
+		</query>	
+	</named-query>
+	
+	<named-query name="char.getByName">
+		<query>
+			select c from MUFRCharacter c where c.name = :name
+		</query>	
+	</named-query>
+
+</entity-mappings>
